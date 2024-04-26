@@ -2,7 +2,7 @@ import time, io, cairosvg, numpy
 from dispmanx import DispmanX
 from PIL import Image
 
-class svg_display:
+class sgvkeyer:
     chromakey=(0,255,0) # (R,G,B) in 8-bit color - Default is greenscreen
     target_resolution=(1920,1080) # (W,H) - Default is 1920x1080 / HD display
     display_resolution=None # Will be populated at init()
@@ -42,7 +42,7 @@ class svg_display:
 
 # Demonstration for testing
 if __name__=="__main__":
-    d = svg_display()
+    d = svgkeyer()
     d.chromakey=(0,0,255)
     d.show("scoreboard.svg")
     time.sleep(5)
