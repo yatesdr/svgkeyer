@@ -2,7 +2,9 @@
 A simple utility class for keying RGBA SVG files into the HDMI output for a raspberry pi.
 
 ## What is it used for?
-It's used for adding live SVG graphics to video when using a hardware video switcher that supports chroma-key overlays.
+It's used for adding live SVG graphics to video when using a hardware video switcher that supports chroma-key overlays.   This is used in my other application (bugger) which is probably more useful, but if you're building an application for a Raspberry Pi that needs a simple HDMI output of a keyed SVG, this will get you started.
+
+In generaly, you'd write an API or other class to interface with some control surface or software, and use this to command the raspberry pi of what SVG you want to output.   For a scoreboard, you'd load a template, replace what you need, and pass the file in to be displayed.
 
 ## Why does it exist?
 I wanted a scoreboard overlay and didn't want to subscribe to some service.
