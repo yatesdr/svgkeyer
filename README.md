@@ -45,6 +45,31 @@ python3 svgkeyer.py
 ```
 
 
+# How to use it
+Usage is pretty simple.   Create a class instance, and tell it an SVG file to render.   The SVG should be the same size as your target display, and should be prepared separately.    You can use templates of whatever type you prefer, but template substitution must be done separately as it's not included in this class.
+
+Example usage:
+```
+from svgkeyer import svgkeyer
+myoutput = svgkeyer()
+myoutput.show("path/to/svg/file.svg")
+```
+
+This will output your SVG on the primary display in 1920x1080p resolution.   If there's an alpha channel in the SVG, it will key it for greenscreen style chroma-keying.
+
+Optionally, you can use blue screen keying (or any other color) by setting the chromakey property:
+```
+myoutput.chromakey=(255,0,0)  # use a red keyer
+myoutput.chromakey=(0,0,255) # use a blue keyer
+myoutput.chromakey=(0,255,0)  # use a green keyer
+```
+
+
+# I like this and want a more fully developed application
+I'm currently developing a more full fledged application that uses this library as the output, it will be released soon.   Watch for "bugger" in my repo at a future date if it's not already there.
+
+
+
 
    
    
