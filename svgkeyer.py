@@ -43,6 +43,6 @@ class svg_display:
 # Demonstration for testing
 if __name__=="__main__":
     d = svg_display()
-    d.chromakey=(255,0,0)
+    d.chromakey=(0,0,255)
     d.show("scoreboard.svg")
     time.sleep(5)
