@@ -65,8 +65,16 @@ myoutput.chromakey=(0,255,0)  # use a green keyer
 ```
 
 
-# I like this and want a more fully developed application
+# FAQ
+## I like this and want a more fully developed application
 I'm currently developing a more full fledged application that uses this library as the output, it will be released soon.   Watch for "bugger" in my repo at a future date if it's not already there.
+
+## Can I use this with Docker?
+Yes, it's docker compatible.   You have to pass the display in per dispmanx documentation and run it rootful.
+```
+sudo docker run  ...  --device /dev/vchiq:/dev/vchiq
+```
+
 
 
 
