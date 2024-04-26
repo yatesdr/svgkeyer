@@ -14,7 +14,7 @@ It uses a Raspberry Pi 4 (or other linux computer) to load an SVG file, chroma-k
 1. Scoreboards or statistics
 2. Lower thirds
 3. Video / news clip overlays
-4. Anything else you want to overlay
+4. Anything else you want to overlay that can be rendered in an SVG document.
 
 
 # Installing
